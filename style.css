@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 99;
+}
+header.headerbg {
+    background: #42ACED;
+}
+header.headerbg .brand , header.headerbg .links a {
+    color: white;
+}
+header.headerbg .links a:hover {
+    color: black;
+}
+/* Menu Toogle */
+.menu-toggle i {
+    color: #42ACED;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.fa-bars {
+    display: none;
+}
+.fa-circle-xmark {
+    display: none;
+}
+.menu-toggle {
+    display: none;
+}
+.mobile-menu {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: -70%;
+    height: 100vh;
+    background: #42ACED;
+}
+.mobile-menu .brand-menu {
+    padding: 30px 0 0 20px;
+    color: white;
+}
+.brand-menu i {
+    padding-right: 5px;
+}
+.mobile-menu .links-menu{
+    margin: 50px 20px;
+}
+.mobile-menu .links-menu a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+}
+.mobile-menu .links-menu a:hover {
+    color: black;
+}
+.mobile-menu .social-media {
+    margin: 0 0 20px 20px;
+}
+.mobile-menu .social-media i{
+    font-size: 25px;
+    padding-right: 15px ;
+}
+.brand {
+    cursor: pointer;
+    color: #42ACED;
+    padding-left: 70px;
+}
+.brand i {
+    padding-right: 8px;
+}
+.links {
+    padding-right: 70px;
+}
+.links a {
+    position: relative;
+    top: 6px;
+    color: black;
+    padding: 0 7px;
+    font-weight: bold;
+}
+.links a:hover {
+    color: #42ACED;
+}
+/* Home */
+.home {
+    padding-top: 95px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left-home {
+    width: calc(50% - 70px);
+    padding-left: 70px;
+}
+.left-home h1 {
+    padding: 100px 0 0 0;
+}
+.left-home h1 span {
+    color: #42ACED;
+}
+.left-home p {
+    padding: 10px 0;
+}
+.left-home button {
+    border: none;
+    background: #42ACED;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.home-right {
+    width: 50%;
+    padding: 70px 0 0 150px;
+}
+.home-right img{
+    width: 100%;
+}
+/* About */
+.about {
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+.about h2 {
+    text-align: center;
+    padding: 50px 0 ;
+}
+.about .card {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.about .card .card-item {
+    position: relative;
+    width: 270px;
+    margin-left: 30px;
+    padding: 15px;
+    border: 2px solid #42ACED;
+}
+.about .card .card-item.active{
+    background: #42ACED;
+}
+.about .card .card-item.active i{
+    color: black;
+}
+.about .card .card-item i {
+    font-size: 40px;
+    padding: 20px 0;
+    display: grid;
+    place-items: center;
+    color: #42ACED;
+}
+.about .card .card-item p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.about .card .card-item h4 {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2px;
+}
+/* langue-programming */
+.langue-programming {
+    width: 100%;
+    height: calc(100vh - 95px);
+    display: flex;
+}
+.left-side {
+    width: 50%;
+    padding: 30px 50px 50px;
+}
+.right-side {
+    padding: 50px;
+    width: 50%;
+}
+.right-side h2 {
+    padding: 20px 0 0;
+    color: #42ACED;
+}
+.right-side p {
+    padding: 20px 0;
+}
+.right-side ul {
+    list-style: none;
+}
+.right-side ul li {
+    padding: 10px 0;
+}
+.right-side ul li span {
+    background: #42ACED;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+/* howtoget */
+.howtoget {
+    width: 100%;
+    height: calc(100vh - 95px);
+    display: flex;
+    background: #42ACED;
+}
+.howtoget .how-left {
+    padding-left: 70px;
+    width: calc(50% - 70px);
+}
+.howtoget .how-left h2 {
+    padding: 30px 0;
+    margin-top: 20px;
+    color: white;
+}
+.howtoget .how-left ul {
+    list-style: none;
+}
+.howtoget .how-left ul li {
+    padding: 5px 0;
+    font-weight: 600;
+}
+.howtoget .how-left ul i {
+    position: relative;
+    top: 4px;
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.howtoget .how-left button {
+    border: none;
+    background: white;
+    color: #000;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.how-right {
+    width: 50%;
+    padding: 70px 0 0 150px;
+}
+.how-right img {
+    width: 100%;
+}
+/* Footer */
+footer {
+    height: fit-content;
+    width: 100%;
+    padding: 30px 0 0 0 ;
+}
+footer .footeritem {
+    padding: 30px 0 60px 0;
+    display: flex;
+    justify-content: center;
+}
+footer .footeritem .footer-links {
+    padding-left: 100px;
+}
+footer .footer-bottom p {
+    border-top: 2px solid #42ACED;
+    text-align: center;
+    font-weight: bold;
+}
+footer h3 {
+    color: #42ACED;
+}
+footer ul li a {
+    color: black;
+}
+footer ul li {
+    padding: 5px 0;
+}
+footer .social-media i {
+    font-size: 23px;
+    padding: 8px 15px 0 0;
+}
+.fa-facebook {
+    color: blue;
+}
+.fa-instagram {
+    color: rgb(230, 40, 204);
+}
+.fa-twitter {
+    color: rgb(94, 243, 231);
+}
+/* Media Query */
+@media screen and (max-width: 450px) {
+    .brand {
+        padding-left: 20px;
+    }
+    .brand i {
+        padding-right: 5px;
+    }
+    .links {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header.headerbg .menu-toggle i {
+        color: white;
+    }
+    /* Home */
+    .home {
+        padding-top: 50px;
+        width: 100%;
+        height: fit-content;
+        display: block;
+    }
+    .left-home {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .home-right {
+        width: 100%;
+        padding: 20px;
+    }
+    /* About */
+    .about {
+        width: 100%;
+        height: fit-content;
+    }
+    .about .card {
+        display: block;
+        width: fit-content;
+    }
+    .about .card .card-item {
+        width: 70%;
+        margin: 10px auto;
+    }
+    /* langue-programming */
+    .langue-programming {
+        width: 100%;
+        height: fit-content;
+        display: block;
+    }
+    .left-side {
+        width: 100%;
+        padding: 20px;
+    }
+    .left-side img {
+        width: 100%;
+    }
+    .right-side {
+        padding: 20px;
+        width: 100%;
+    }
+    /* howtoget */
+    .howtoget {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        background: #42ACED;
+    }
+    .howtoget .how-left {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .how-right {
+        width: 100%;
+        padding: 20px;
+    }
+    .how-right img {
+        width: 100%;
+    }
+    /* Footer */
+    footer {
+        height: fit-content;
+        width: 100%;
+        padding: 30px 0 0 ;
+    }
+    footer .footeritem {
+        padding: 30px 0;
+        display: block;
+    }
+    footer .footeritem .footer-links {
+        padding-left: 20px;
+        padding-top: 35px;
+    }
+    footer .footer-bottom p {
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
